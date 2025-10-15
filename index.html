@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>University Carnival</title>
     <link rel="stylesheet"  href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">Header Logo</div>
         <div class="links">
-            <a>Link One</a>
+            <a href="/rides.html">Thrill Rides</a>
             <a>Link One</a>
             <a>Link One</a>
         </div>
@@ -18,9 +18,9 @@
     <main>
         <div class="first">
             <div class="left">
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here under the maintitle. It's a smaller font and the color is lower contrast</p>
-                <button>Sign Up</button>
+                <h1>University Carnival</h1>
+                <p>Welcome to the 29th annual University Carnival. Come stop by October 7-9 to experience our variety of thrill rides, fair food, games, and even a petting zoo. Day passes are starting at $15 as well weekend passes at $30.</p>
+                <button class="Buy">Buy Here</button>
             </div>
             <div class="right">
                 <img src="Images/carnivale.jpg" alt="Carnival" >
@@ -56,10 +56,20 @@
                 <h2>Call to action! It's time!</h2>
                 <h3>Sign up for our product by clicking that button right over  there!</h3>
             </div>    
-            <button>Sign Up</button>
+            <button class="open-button">Sign Up</button>
+            <dialog class="modal" id="modal">
+                <h2>Signup Information</h2>
+                <button class="button close-button">X</button>
+                <form class="form" method="dialog">
+                    <label>Your Name: <input type="text"></label>
+                    <label>Your Email: <input type="email"></label>
+                    <label>Your Message: <textarea></textarea></label>
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </dialog>
             
         </div>
     </main>
-
+<script src="script.js"></script>
 </body>
 </html>
