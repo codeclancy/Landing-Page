@@ -1,17 +1,17 @@
-const modal = document.querySelector('#modal');
-const openModal = document.querySelector('.open-button');
-const closeModal = document.querySelector('.close-button');
+// const modal = document.querySelector('#modal');
+// const openModal = document.querySelector('.open-button');
+// const closeModal = document.querySelector('.close-button');
 
-openModal.addEventListener('click', () => {
-    modal.showModal()
-})
+// openModal.addEventListener("click", () => {
+//     modal.showModal();
+// })
 
-closeModal.addEventListener('click', () => {
-    modal.close()
-})
+// closeModal.addEventListener("click", () => {
+//     modal.close();
+// })
 
 
-const buttons = document.querySelector("[data-carousel-button]")
+const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
     button.addEventListener("click", () =>{

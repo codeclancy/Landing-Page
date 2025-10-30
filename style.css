@@ -237,6 +237,7 @@ button.buy {
     border-radius: .25rem;
     padding: 0 .5rem;
     background-color: rgba(0, 0, 0, .1);
+    z-index: 1;
 }
 .carousel-button:hover,
 .carousel-button:focus {
