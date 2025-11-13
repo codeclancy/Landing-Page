@@ -1,14 +1,17 @@
-// const modal = document.querySelector('#modal');
-// const openModal = document.querySelector('.open-button');
-// const closeModal = document.querySelector('.close-button');
+const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open-button');
+const closeModal = document.querySelector('.close-button');
 
-// openModal.addEventListener("click", () => {
-//     modal.showModal();
-// })
-
-// closeModal.addEventListener("click", () => {
-//     modal.close();
-// })
+if  (openModal && modal) {  
+    openModal.addEventListener("click", () => {
+        modal.showModal();
+    })
+}
+if (closeModal && modal) {
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    })
+}
 
 
 const buttons = document.querySelectorAll("[data-carousel-button]")

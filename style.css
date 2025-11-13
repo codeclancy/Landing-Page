@@ -29,6 +29,10 @@ header {
     gap: 20px;
     margin-right: 149px;
 }
+a {
+    text-decoration: none;
+    color: #f9faf8
+}
 
 /* section 1 */
 
