@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Carnival</title>
     <link rel="stylesheet"  href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,7 +19,8 @@
         </div>
     </header>
     <main>
-        <ul id="accordion">
+        <!-- example of inaccessible accordion -->
+        <!-- <ul id="accordion">
             <li>
                 <label for="questionOne">When is the Carnival <span>&#x3e</span></label>
                 <input type="radio" name="accordion" id="questionOne" checked>
@@ -47,8 +49,20 @@
                     <p>Here at the carnival isfhifhnefuihefiuewh</p>
                 </div>
             </li>
-        </ul>
-        <ul>
+        </ul> -->
+        <!-- <ul id="accordion">
+            <li>
+                <details>
+                    <summary id="questionOne">When is the Carnival?</summary>
+                    <p>Here at the carnival isfhifhnefuihefiuewh</p>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>When is the Carnival?</summary>
+                    <p>Here at the carnival isfhifhnefuihefiuewh</p>
+                </details>
+            </li>
             <li>
                 <details>
                     <summary>When is the Carnival?</summary>
@@ -61,5 +75,274 @@
                     <p>Here at the carnival isfhifhnefuihefiuewh</p>
                 </details>
             </li>
-        </ul>
+        </ul> -->
+        <div class="wrapper">
+            <div class="accordion">
+                <div class="accordion-panel">
+                    <h2 id="panel1-heading">
+                        <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="true">
+                            <span class="accordion-title" id="panel1-title">When is the Carnival?</span>
+                            <svg class="accordion-icon" aria-hidden="true">
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading" aria-hidden="false" role="region" >
+                        <p>Here at the carnival isfhifhnefuihefiuewh</p>
+                    </div>
+                </div>
+                <div class="accordion-panel">
+                    <h2 id="panel2-heading">
+                        <button
+                        class="accordion-trigger"
+                        aria-controls="panel2-content"
+                        aria-expanded="false"
+                        >
+                        <span class="accordion-title" id="panel2-title">How much are tickets?</span>
+                        <svg class="accordion-icon" aria-hidden="true">
+                            <use xlink:href="#ticket"></use>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div
+                        class="accordion-content"
+                        id="panel2-content"
+                        aria-labelledby="panel2-heading"
+                        aria-hidden="true"
+                        role="region"
+                    >
+                        <p>
+                        General admission is $15 for adults and $10 for children under 12.
+                        Unlimited ride wristbands are available for an additional $20.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-panel">
+                    <h2 id="panel3-heading">
+                        <button
+                        class="accordion-trigger"
+                        aria-controls="panel3-content"
+                        aria-expanded="false"
+                        >
+                        <span class="accordion-title" id="panel3-title">Where is the carnival located?</span>
+                        <svg class="accordion-icon" aria-hidden="true">
+                            <use xlink:href="#map"></use>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div
+                        class="accordion-content"
+                        id="panel3-content"
+                        aria-labelledby="panel3-heading"
+                        aria-hidden="true"
+                        role="region">
+                        <p>
+                        The carnival is located at Riverside Park, just off Main Street, with free parking available nearby.
+                        </p>
+                    </div>
+                  </div>
+                <div class="accordion-panel">
+                    <h2 id="panel3-heading">
+                        <button
+                        class="accordion-trigger"
+                        aria-controls="panel3-content"
+                        aria-expanded="false"
+                        >
+                        <span class="accordion-title" id="panel3-title">Where is the carnival located?</span>
+                        <svg class="accordion-icon" aria-hidden="true">
+                            <use xlink:href="#map"></use>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div
+                        class="accordion-content"
+                        id="panel3-content"
+                        aria-labelledby="panel3-heading"
+                        aria-hidden="true"
+                        role="region">
+                        <p>
+                        The carnival is located at Riverside Park, just off Main Street, with free parking available nearby.
+                        </p>
+                    </div>
+                  </div>
+                <div class="accordion-panel">
+                    <h2 id="panel4-heading">
+                        <button
+                        class="accordion-trigger"
+                        aria-controls="panel4-content"
+                        aria-expanded="false"
+                        >
+                        <span class="accordion-title" id="panel4-title">Where is the carnival located?</span>
+                        <svg class="accordion-icon" aria-hidden="true">
+                            <use xlink:href="#map"></use>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div
+                        class="accordion-content"
+                        id="panel4-content"
+                        aria-labelledby="panel5-heading"
+                        aria-hidden="true"
+                        role="region">
+                        <p>
+                        The carnival is located at Riverside Park, just off Main Street, with free parking available nearby.
+                        </p>
+                    </div>
+                  </div>
+                <div class="accordion-panel">
+                  <h2 id="panel5-heading">
+                    <button
+                        class="accordion-trigger"
+                        aria-controls="panel5-content"
+                        aria-expanded="false"
+                        >
+                        <span class="accordion-title" id="panel6-title">Where is the carnival located?</span>
+                        <svg class="accordion-icon" aria-hidden="true">
+                            <use xlink:href="#map"></use>
+                        </svg>
+                        </button>
+                    </h2>
+                    <div
+                        class="accordion-content"
+                        id="panel6-content"
+                        aria-labelledby="panel6-heading"
+                        aria-hidden="true"
+                        role="region">
+                        <p>
+                        The carnival is located at Riverside Park, just off Main Street, with free parking available nearby.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
+
+    <svg width="0" height="0" class="hidden">
+  <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 7560 4290" id="ticket">
+    <g id="layer1" fill="#000000" stroke="none">
+      <path d="M395 4010 c-3 -5 -24 -247 -46 -536 -28 -375 -37 -530 -29 -538 6 -6 57 -33 113 -61 l102 -50 36 -91 36 -91 -23 -123 c-25 -132 -22 -125 -144 -261 l-25 -27 -104 15 c-64 9 -107 11 -113 5 -15 -15 -161 -1033 -150 -1044 6 -6 1550 -235 3433 -510 2910 -424 3425 -497 3434 -485 5 8 57 206 115 441 l104 426 -47 48 c-29 30 -78 63 -126 87 l-79 38 -45 127 -45 126 14 79 c7 43 15 79 16 80 2 2 94 48 204 103 160 80 203 106 207 124 3 13 47 234 97 491 94 486 95 488 51 502 -16 5 -6957 1135 -6973 1135 -4 0 -10 -4 -13 -10z"></path>
+    </g>
+  </symbol>
+</svg>
+<svg width="0" height="0" class="hidden">
+  <symbol xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsCc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsSvg="http://www.w3.org/2000/svg" xmlnsNs1="http://sozi.baierouge.fr" id="map" sodipodiDocname="map-marker-23x31.svg" version="1.1" inkscapeVersion="0.48.3.1 r9886" viewBox="0 0 23 31">
+    <defs id="defs4">
+      <linearGradient id="linearGradient3777" y2="20.5" gradientUnits="userSpaceOnUse" x2="20.5" y1="7.5" x1="9" inkscapeCollect="always">
+        <stop id="stop3765" offset="0"></stop>
+        <stop id="stop3767" offset="1"></stop>
+      </linearGradient>
+    </defs>
+    <sodipodi:namedview id="base" bordercolor="#666666" inkscapePageshadow="2" inkscapeWindowY="0" pagecolor="#ffffff" inkscapeShowpageshadow="false" inkscapeWindowMaximized="0" inkscapeZoom="1" inkscapeWindowX="0" inkscapeWindowHeight="1181" showgrid="false" borderopacity="1.0" inkscapeCurrentLayer="layer1" inkscapeCx="11.374639" inkscapeCy="7.4076205" inkscapeWindowWidth="1920" inkscapePageopacity="0.0" inkscapeDocumentUnits="px">
+      <inkscape:grid id="grid2987" originy="0.5px" enabled="true" originx="0.5px" visible="true" snapvisiblegridlinesonly="true" type="xygrid" empspacing="2"></inkscape:grid>
+    </sodipodi:namedview>
+    <g id="layer1" inkscapeLabel="Layer 1" inkscapeGroupmode="layer" transform="translate(0 -1021.4)">
+      <path id="path3761" d="m11.5 0.5c-7 0-11 4-11 11s9.9375 19 11 19 11-12 11-19-4-11-11-11z" sodipodiNodetypes="zzzzz" inkscapeConnectorCurvature="0" transform="translate(0 1021.4)"></path>
+    </g>
+    <metadata>
+      <rdf:RDF>
+        <cc:Work>
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdfResource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+          <cc:license rdfResource="http://creativecommons.org/licenses/publicdomain/"></cc:license>
+          <dc:publisher>
+            <cc:Agent rdfAbout="http://openclipart.org/">
+              <dc:title>Openclipart</dc:title>
+            </cc:Agent>
+          </dc:publisher>
+          <dc:title>Map Location Marker</dc:title>
+          <dc:date>2012-03-21T13:05:26</dc:date>
+          <dc:description>Just a map marker for maps, in games.. on maps on websites..
+            \n
+            \nEnjoy!</dc:description>
+          <dc:source>https://openclipart.org/detail/168985/map-location-marker-by-qubodup</dc:source>
+          <dc:creator>
+            <cc:Agent>
+              <dc:title>qubodup</dc:title>
+            </cc:Agent>
+          </dc:creator>
+          <dc:subject>
+            <rdf:Bag>
+              <rdf:li>find</rdf:li>
+              <rdf:li>location</rdf:li>
+              <rdf:li>map</rdf:li>
+              <rdf:li>mapmarker</rdf:li>
+              <rdf:li>marker</rdf:li>
+              <rdf:li>position</rdf:li>
+              <rdf:li>spy</rdf:li>
+            </rdf:Bag>
+          </dc:subject>
+        </cc:Work>
+        <cc:License rdfAbout="http://creativecommons.org/licenses/publicdomain/">
+          <cc:permits rdfResource="http://creativecommons.org/ns#Reproduction"></cc:permits>
+          <cc:permits rdfResource="http://creativecommons.org/ns#Distribution"></cc:permits>
+          <cc:permits rdfResource="http://creativecommons.org/ns#DerivativeWorks"></cc:permits>
+        </cc:License>
+      </rdf:RDF>
+    </metadata>
+  </symbol>
+</svg>
+<svg width="0" height="0" class="hidden">
+  <symbol xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" id="calendar" version="1.1" inkscapeVersion="0.91 r" sodipodiDocname="crossed-calendar.svg" viewBox="0 0 949.24245 1000">
+    <defs id="defs7696"></defs>
+    <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscapePageopacity="0.0" inkscapePageshadow="2" inkscapeZoom="0.35" inkscapeCx="122.49364" inkscapeCy="277.79285" inkscapeDocumentUnits="px" inkscapeCurrentLayer="layer1" showgrid="false" fitMarginTop="0" fitMarginLeft="0" fitMarginRight="0" fitMarginBottom="0"></sodipodi:namedview>
+    <metadata id="metadata7699">
+      <rdf:RDF>
+        <cc:Work rdfAbout="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type rdfResource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <g inkscapeLabel="Layer 1" inkscapeGroupmode="layer" id="layer1" transform="translate(1457.1365,-53.012206)">
+      <g id="g7611" transform="matrix(7.2231955,0,0,7.2231955,-4959.5145,-5825.0699)">
+        <rect x="490.54288" y="833.65747" sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" width="120.08873" height="116.08029" rx="5.7779193" id="rect850"></rect>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 492.62341,866.33582 117.49359,0" id="path839" inkscapeConnectorCurvature="0"></path>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 490.54384,921.85839 121.13385,0" id="path840" inkscapeConnectorCurvature="0"></path>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 492.62341,894.0971 117.49359,0" id="path843" inkscapeConnectorCurvature="0"></path>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 520.08394,839.0079 0,111.25604" id="path845" inkscapeConnectorCurvature="0"></path>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 550.14494,839.0079 0,111.25604" id="path846" inkscapeConnectorCurvature="0"></path>
+        <path sodipodiStrokeCmyk="(0.0000000 0.0000000 0.0000000 0.50000000)" d="m 580.20594,839.0079 0,111.25604" id="path848" inkscapeConnectorCurvature="0"></path>
+        <rect x="484.8793" y="813.77863" sodipodiStrokeCmyk="(0 0 0 0.8)" width="131.41586" height="26.024639" rx="5.1069994" id="rect804"></rect>
+        <flowRoot transform="matrix(2.0543657,0,0,2.0543657,-982.7269,-201.28055)" id="flowRoot7505" xml:space="preserve">
+          <flowRegion id="flowRegion7507">
+            <rect y="505.03198" x="714.84375" height="137.5" width="118.75" id="rect7509"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7511">✗</flowPara>
+        </flowRoot>
+        <flowRoot transform="translate(515.80115,843.02544)" id="flowRoot7505-4" xml:space="preserve">
+          <flowRegion id="flowRegion7507-9">
+            <rect y="-6.7863069" x="-4.5474735e-13" height="282.47528" width="243.95593" id="rect7509-8"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7511-5">✗</flowPara>
+        </flowRoot>
+        <flowRoot xml:space="preserve" id="flowRoot7547" transform="translate(545.77881,843.02544)">
+          <flowRegion id="flowRegion7549">
+            <rect id="rect7551" width="243.95593" height="282.47528" x="-4.5474735e-13" y="-6.7863069"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7553">✗</flowPara>
+        </flowRoot>
+        <flowRoot transform="translate(575.75647,843.02544)" id="flowRoot7555" xml:space="preserve">
+          <flowRegion id="flowRegion7557">
+            <rect y="-6.7863069" x="-4.5474735e-13" height="282.47528" width="243.95593" id="rect7559"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7561">✗</flowPara>
+        </flowRoot>
+        <flowRoot xml:space="preserve" id="flowRoot7579">
+          <flowRegion id="flowRegion7581">
+            <rect id="rect7583" width="243.95593" height="282.47528" x="485.82358" y="863.58496"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7585">✗</flowPara>
+        </flowRoot>
+        <flowRoot xml:space="preserve" id="flowRoot7587" transform="translate(515.80115,870.37059)">
+          <flowRegion id="flowRegion7589">
+            <rect id="rect7591" width="243.95593" height="282.47528" x="-4.5474735e-13" y="-6.7863069"></rect>
+          </flowRegion>
+          <flowPara id="flowPara7593">✗</flowPara>
+        </flowRoot>
+      </g>
+    </g>
+  </symbol>
+</svg>
+</body>
